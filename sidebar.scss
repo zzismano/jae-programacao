@@ -1,0 +1,89 @@
+ul {
+  padding: 0;
+}
+
+.categorias {
+  list-style-type: none;
+  padding: 0;
+
+}
+
+#sidebar {
+  height: 100%;
+  width: 25%;
+  position: fixed;
+}
+
+.square {
+  height: 10%;
+  width: auto;
+  padding-right: 12px;
+  padding-left: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+}
+
+.square li {
+  font-weight: bold;
+  word-break: break-all;
+  text-align: center;
+  display: inline;
+  font-size: 16px;
+}
+
+#filme {
+  background-color: rgb(42, 42, 93);
+  color: white;
+}
+
+#musica {
+  background-color: white;
+  color: rgb(23, 92, 27)
+}
+
+#teatro {
+  background-color: rgb(134, 43, 43);
+  color: white;
+}
+
+#espetaculo {
+  background-color: rgb(194, 108, 108);
+  color: white;
+}
+
+#evento {
+  background-color: rgb(206, 131, 56);
+  color: white;
+}
+
+#expo {
+  background-color: rgb(232, 165, 98);
+  color: white;
+}
+
+#literatura {
+  background-color: rgb(135, 114, 92);
+  color: white;
+}
+
+#ideias {
+  background-color: rgb(181, 155, 127);
+  color: white;
+}
+
+#icones {
+  background-color: rgb(131, 56, 168);
+  color: white;
+
+}
+#icones li {
+  display: flex;
+  flex-direction: column;
+}
+
+#icones li i {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
