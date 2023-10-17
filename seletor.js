@@ -1,0 +1,44 @@
+const filme = document.getElementById('filme')
+const musica = document.getElementById('musica')
+const teatro = document.getElementById('teatro')
+const espetaculo = document.getElementById('espetaculo')
+const evento = document.getElementById('evento')
+const expo = document.getElementById('expo')
+const ideias = document.getElementById('ideias')
+const literatura = document.getElementById('literatura')
+
+const categorias = [filme, musica, teatro, espetaculo, evento, expo, ideias, literatura]
+
+// function seletor() {
+//   categorias.forEach((categoria) => {
+//     categoria.addEventListener("click", (event)=> {
+//       console.log(event)
+//     });
+//   });
+// }
+
+categorias.forEach((categoria) => {
+  categoria.addEventListener("click", (event)=> {
+    var bgColor = event.currentTarget.style.backgroundColor
+    var color = event.currentTarget.style.color
+
+    if (event.currentTarget.style.color === 'white' ) {
+      event.currentTarget.style.backgroundColor = 'white';
+      event.currentTarget.style.color = bgColor;
+    } else {
+      event.currentTarget.style.backgroundColor = color;
+      event.currentTarget.style.color = 'white';
+
+    };
+    var copia = categorias.slice()
+    copia.splice(categorias.indexOf(event.currentTarget), 1)
+
+    copia.forEach((elemento) => {
+      if (elemento.style.backgroundColor === "white") {
+        elemento.style.backgroundColor = elemento.style.color;
+        elemento.style.color = "white"
+      }
+    });
+
+  });
+});
