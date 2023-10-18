@@ -9,27 +9,17 @@ const literatura = document.getElementById('literatura')
 
 const categorias = [filme, musica, teatro, espetaculo, evento, expo, ideias, literatura]
 
-// function seletor() {
-//   categorias.forEach((categoria) => {
-//     categoria.addEventListener("click", (event)=> {
-//       console.log(event)
-//     });
-//   });
-// }
 
 categorias.forEach((categoria) => {
   categoria.addEventListener("click", (event)=> {
     var bgColor = event.currentTarget.style.backgroundColor
     var color = event.currentTarget.style.color
-
+    var conteudo = document.getElementById(`conteudo-${categoria.id}`)
     if (event.currentTarget.style.color === 'white' ) {
       event.currentTarget.style.backgroundColor = 'white';
       event.currentTarget.style.color = bgColor;
-    } else {
-      event.currentTarget.style.backgroundColor = color;
-      event.currentTarget.style.color = 'white';
-
     };
+
     var copia = categorias.slice()
     copia.splice(categorias.indexOf(event.currentTarget), 1)
 
@@ -37,7 +27,19 @@ categorias.forEach((categoria) => {
       if (elemento.style.backgroundColor === "white") {
         elemento.style.backgroundColor = elemento.style.color;
         elemento.style.color = "white"
-      }
+      };
+
+
+    });
+
+
+    conteudo.classList.remove('d-none')
+
+    copia.forEach((elemento) => {
+      var conteudoCopia = document.getElementById(`conteudo-${elemento.id}`)
+      if (!conteudoCopia.classList.contains('d-none')) {
+        conteudoCopia.classList.add('d-none')
+      };
     });
 
   });

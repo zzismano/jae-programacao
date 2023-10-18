@@ -14,6 +14,22 @@
   background-repeat: no-repeat;
 
 }
+@media (max-width: 375px) {
+  .foto-filme {
+    width: 9.3rem;
+    height: 8rem;
+  }
+
+}
+
+@media (min-width: 425px) {
+  .foto-filme {
+    width: 9.3rem;
+    height: 10rem;
+  }
+
+}
+
 
 .foto-filme {
   background-image: url("./assets/images/Perola-691x1000-1.jpg.jpeg");
