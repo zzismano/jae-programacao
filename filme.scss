@@ -1,0 +1,107 @@
+.menu-filme {
+  background-color: rgb(42, 42, 93);
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+
+
+}
+
+#menu-filme-botoes{
+  color: white;
+  margin: 5px;
+}
+
+
+.filme {
+  background-color:  rgb(236, 240, 251);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 2px solid rgb(42, 42, 93);
+  border-top: 2px solid rgb(42, 42, 93);
+}
+
+.foto-filme {
+  background-image: url("./assets/images/Perola-691x1000-1.jpg.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 5px;
+  margin-right: 10px;
+  width: 10vw;
+  height: 22vh;
+
+}
+
+@media screen and (max-width: 320px) {
+  .foto-filme {
+
+    background-size: contain;
+    height: 150px;
+    flex: 1;
+
+  }
+
+  .infos-filme {
+    flex: 1;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 375px) {
+  .foto-filme {
+
+    background-size: cover;
+    height: 15vh;
+    width: 38vw;
+
+
+  }
+
+}
+
+
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  .foto-filme {
+    width: 30vw;
+    height: 15vh;
+    background-size: cover;
+
+  }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .foto-filme {
+    width: 20vw;
+    height: 20vh;
+    background-size: contain;
+
+  }
+
+
+}
+
+
+
+.infos-filme {
+  text-wrap: wrap;
+
+
+}
+
+.infos-filme p {
+  font-weight: medium;
+  font-size: 10px;
+  margin-bottom: 0;
+  color:  rgb(42, 42, 93);
+  line-height: 1;
+  text-wrap: wrap;
+}
+
+.infos-filme strong {
+  line-height: 1;
+  color: rgb(42, 42, 93);
+  font-size: 14px;
+}

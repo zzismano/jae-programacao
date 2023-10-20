@@ -1,0 +1,36 @@
+.menu-teatro {
+  background-color: rgb(134, 43, 43);
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+
+}
+.teatro {
+  background-color:  rgb(251, 230, 230);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 2px solid rgb(134, 43, 43);
+  border-top: 2px solid rgb(134, 43, 43);
+}
+
+.infos-teatro {
+  margin-left: 20px;
+}
+
+.infos-teatro p {
+  font-weight: medium;
+  font-size: 10px;
+  margin-bottom: 0;
+  color: rgb(134, 43, 43);
+  line-height: 1;
+}
+
+.infos-teatro strong {
+  line-height: 1;
+  color: rgb(134, 43, 43);
+  font-size: 14px;
+}
