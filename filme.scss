@@ -1,18 +1,17 @@
 .menu-filme {
   background-color: rgb(42, 42, 93);
+  width: 80%;
   height: 5rem;
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: fixed;
+  top: 72px;
 
 
 
 }
 
-#menu-filme-botoes{
-  color: white;
-  margin: 5px;
-}
+
 
 
 .filme {
@@ -23,6 +22,15 @@
   padding-right: 10px;
   border-bottom: 2px solid rgb(42, 42, 93);
   border-top: 2px solid rgb(42, 42, 93);
+}
+
+@media (min-width: 998px) {
+  .filme {
+    border-left: 2px solid rgb(42, 42, 93);
+    border-right: 2px solid rgb(42, 42, 93);
+
+
+  }
 }
 
 .foto-filme {

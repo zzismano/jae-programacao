@@ -2,13 +2,14 @@
 @import "filme.scss";
 @import "show.scss";
 
+
 .conteudo {
   margin-left: 20%;
   border-top: 2px solid white;
   width: 80%;
   border-left: 2px solid white;
+  overflow-x: auto;
 }
-
 
 .infos {
   margin-left: 20px;
