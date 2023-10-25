@@ -1,13 +1,13 @@
 const filme = document.getElementById('filme')
 const musica = document.getElementById('musica')
 const teatro = document.getElementById('teatro')
-const espetaculo = document.getElementById('espetaculo')
 const evento = document.getElementById('evento')
 const expo = document.getElementById('expo')
 const ideias = document.getElementById('ideias')
-const literatura = document.getElementById('literatura')
+const livros = document.getElementById('livros')
+const mais = document.getElementById('mais')
 
-const categorias = [filme, musica, teatro, espetaculo, evento, expo, ideias, literatura]
+const categorias = [filme, musica, teatro, mais, evento, expo, ideias, livros]
 
 
 categorias.forEach((categoria) => {
