@@ -2,10 +2,12 @@
   background-color:  rgb(226, 248, 227);
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  // padding-left: 10px;
+  // padding-right: 10px;
   border-bottom: 2px solid rgb(23, 92, 27);
   border-top: 2px solid rgb(23, 92, 27);
+  width: 80%;
+  height: auto;
 }
 
 @media (min-width: 998px) {
@@ -32,8 +34,8 @@
 .foto-show {
   background-image: url("./assets/images/28906-img-programacao.jpg");
   background-size: cover;
-  width: 8rem;
-  height: 4rem;
+  width: 13rem;
+  height: 9rem;
   background-repeat: no-repeat;
 
 }
