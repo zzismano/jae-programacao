@@ -1,7 +1,12 @@
 @import "teatro.scss";
 @import "filme.scss";
-@import "show.scss";
+@import "musica.scss";
 
+
+
+.morelink{
+  color: black;
+}
 
 .button-small {
   height: 22px;
@@ -21,27 +26,20 @@
   overflow-x: auto;
 }
 
-.infos {
-  margin-left: 20px;
+@media screen and (min-width: 998px) {
+
+  .conteudo {
+    width: 90%;
+    margin-left: 10%;
+  }
+
 }
 
-.infos p {
-  font-weight: medium;
-  font-size: 14px;
-  margin-bottom: 0;
-  color:  rgb(23, 92, 27);
-  line-height: 1.2;
-}
 
-.infos strong {
-  line-height: 1.5;
-  color:  rgb(23, 92, 27);
-  font-size: 16px;
-}
 
 #horario {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 0;
   color: black;
   line-height: 1.5;
@@ -75,7 +73,7 @@
 }
 
 .legenda {
-  display: flex;
+  display: none;
   gap: 3px;
   font-size: 10px;
 }

@@ -15,6 +15,12 @@ ul {
   z-index: 1000;
 }
 
+@media screen and (min-width: 998px) {
+  #sidebar {
+    width: 10%
+  }
+}
+
 .square {
   height: 10%;
   width: auto;
@@ -35,6 +41,8 @@ ul {
 }
 
 @media screen and  (max-width: 320px) {
+
+
   .square {
     width: 22vw;
   }

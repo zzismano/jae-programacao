@@ -31,11 +31,42 @@
 
 }
 
-.foto-show {
+.foto-musica {
   background-image: url("./assets/images/28906-img-programacao.jpg");
   background-size: cover;
   width: 13rem;
   height: 9rem;
   background-repeat: no-repeat;
+  margin-right: 20px
+}
 
+@media screen and (min-width: 998px) {
+  .foto-musica {
+    width: 15rem;
+    height: 10rem;
+
+
+  }
+  .menu-musica {
+    width: 90%;
+  }
+}
+
+.infos-musica {
+  // margin-left: 20px;
+
+}
+
+.infos-musica p {
+  font-weight: medium;
+  font-size: 12px;
+  margin-bottom: 0;
+  color:  rgb(23, 92, 27);
+  line-height: 1.2;
+}
+
+.infos-musica strong {
+  line-height: 1.2;
+  color:  rgb(23, 92, 27);
+  font-size: 14px;
 }
