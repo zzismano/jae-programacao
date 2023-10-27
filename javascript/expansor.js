@@ -28,7 +28,9 @@ $(document).ready(function() {
           $(this).html(lesstext);
       }
       $content.toggle();
-      $ellipses.toggle();
+      $(this).siblings()[0].classList.toggle("d-none")
+
+
 
       return false;
   });

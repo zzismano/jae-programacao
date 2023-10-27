@@ -1,5 +1,6 @@
 .menu-filme {
   background-color: rgb(42, 42, 93);
+  background-image: linear-gradient(  rgb(42, 42, 93), rgb(236, 240, 251));
   width: 80%;
   height: 5rem;
   display: flex;
@@ -16,12 +17,13 @@
 
 .filme {
   background-color:  rgb(236, 240, 251);
+
   padding-top: 5px;
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  border-bottom: 2px solid rgb(42, 42, 93);
-  border-top: 2px solid rgb(42, 42, 93);
+  border-bottom: 4px solid rgb(42, 42, 93);
+
 }
 
 @media (min-width: 998px) {
