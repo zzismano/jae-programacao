@@ -1,5 +1,6 @@
 .menu-teatro {
   background-color: rgb(134, 43, 43);
+  background-image: linear-gradient(rgb(134, 43, 43),  rgb(251, 230, 230) );
   height: 5rem;
   width: 80%;
   display: flex;
@@ -22,8 +23,7 @@
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  border-bottom: 2px solid rgb(134, 43, 43);
-  border-top: 2px solid rgb(134, 43, 43);
+  border-bottom: 4px solid rgb(134, 43, 43);
 }
 
 .infos-teatro {

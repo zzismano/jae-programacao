@@ -2,7 +2,9 @@
 @import "filme.scss";
 @import "musica.scss";
 
-
+.navbar {
+  border-bottom: 6px solid rgb(255,	171, 39);
+}
 
 .morelink{
   color: black;
@@ -20,7 +22,7 @@
 
 .conteudo {
   margin-left: 20%;
-  border-top: 2px solid white;
+  border-top: 2px  rgb(255	171	39);
   width: 80%;
   border-left: 2px solid white;
   overflow-x: auto;
