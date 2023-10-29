@@ -12,6 +12,7 @@ const categorias = [filme, musica, teatro, mais, evento, expo, ideias, livros]
 
 logo.addEventListener("click", (event)=> {
 
+  conteudoHome.classList.remove("d-none")
   categorias.forEach((categoria) => {
     var bgColor = categoria.style.backgroundColor
     var color = categoria.style.color
@@ -27,7 +28,6 @@ logo.addEventListener("click", (event)=> {
 
 
   })
-  conteudoHome.classList.remove("d-none")
 })
 
 categorias.forEach((categoria) => {
@@ -35,6 +35,10 @@ categorias.forEach((categoria) => {
     var bgColor = event.currentTarget.style.backgroundColor
     var color = event.currentTarget.style.color
     var conteudo = document.getElementById(`conteudo-${categoria.id}`)
+
+    if (!conteudoHome.classList.contains('d-none')) {
+      conteudoHome.classList.add('d-none')
+    };
 
     if (event.currentTarget.style.color === 'white' ) {
       event.currentTarget.style.backgroundColor = 'white';
@@ -63,7 +67,8 @@ categorias.forEach((categoria) => {
       };
     });
 
-    conteudoHome.classList.add("d-none")
+
+
 
   });
 });
