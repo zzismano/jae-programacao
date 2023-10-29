@@ -1,0 +1,24 @@
+.menu-home {
+  background-color: rgb(255,	171, 39);
+  background-image: linear-gradient(rgb(255,	171, 39), white);
+  height: 5rem;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 72px;
+
+
+}
+
+#slogan {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: rgb(137,	42,	91);
+}
+
+#slogan h1 {
+  font-weight: bold ;
+}
