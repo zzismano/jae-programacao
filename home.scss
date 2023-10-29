@@ -2,7 +2,7 @@
   background-color: rgb(255,	171, 39);
   background-image: linear-gradient(rgb(255,	171, 39), white);
   height: 5rem;
-  width: 90%;
+  width: 80%;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -10,6 +10,14 @@
 
 
 }
+
+@media (min-width: 998px) {
+
+  .menu-home {
+    width: 90%;
+  }
+}
+
 
 #slogan {
   display: flex;
@@ -21,4 +29,16 @@
 
 #slogan h1 {
   font-weight: bold ;
+}
+
+.carousel-item img {
+  height: 30vh;
+}
+
+.carrosel {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin-top: 5rem;
+
 }
