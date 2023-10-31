@@ -4,7 +4,7 @@
 
 
 html {
-  font-family: 'roboto', sans-serif;
+  font-family: 'roboto', sans-serif!important;
 }
 
 
@@ -13,4 +13,8 @@ html {
   display: flex;
   flex-direction: row;
   margin-top: 70px;
+}
+
+body {
+  font-family: 'roboto', sans-serif!important;
 }

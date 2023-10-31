@@ -7,6 +7,8 @@
   flex-direction: column;
   position: fixed;
   top: 72px;
+  z-index: 1000;
+  opacity: 95%;
 
 
 }
@@ -15,6 +17,7 @@
 
   .menu-home {
     width: 90%;
+    z-index: 1000;
   }
 }
 
@@ -31,8 +34,13 @@
   font-weight: bold ;
 }
 
+.carousel-item {
+  object-fit: cover;
+}
+
 .carousel-item img {
   height: 30vh;
+  width: 50vh;
 }
 
 .carrosel {
@@ -41,4 +49,36 @@
   width: 80%;
   margin-top: 5rem;
 
+}
+
+#botao-home-1 {
+  background-color: rgb(255,	171, 39) ;
+  font-size: 12px;
+
+}
+
+#botao-home-2 {
+  background-color: rgb(255, 227, 182) ;
+  font-size: 12px;
+}
+
+.destaques {
+  white-space: nowrap !important;
+  background-color: rgb(255,	171, 39);
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.card {
+  border-radius: 0;
+  min-width: 15rem;
+  margin-right: 0.5rem;
+  border: none;
+
+
+}
+
+.card-img-top{
+  border-radius: 0;
 }
