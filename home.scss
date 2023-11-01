@@ -30,12 +30,20 @@
   color: rgb(137,	42,	91);
 }
 
-#slogan h1 {
+#slogan h2 {
   font-weight: bold ;
+  margin-bottom: 2px;
+}
+
+#slogan p {
+  font-size: larger;
+  font-weight: 300;
 }
 
 .carousel-item {
-  object-fit: cover;
+  // object-fit: cover;
+
+
 }
 
 .carousel-item img {
@@ -46,9 +54,22 @@
 .carrosel {
   display: flex;
   justify-content: center;
-  width: 80%;
   margin-top: 5rem;
+  width: 15rem;
 
+}
+
+.legenda-carrosel {
+  background-color: rgb(137,	42,	91);
+  min-height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.legenda-carrosel p {
+  color: white;
+  margin-left: 3px;
+  margin-bottom: 0px;
+  font-size: 12px;
 }
 
 #botao-home-1 {
@@ -62,9 +83,17 @@
   font-size: 12px;
 }
 
-.destaques {
+.mais-vistos {
   white-space: nowrap !important;
   background-color: rgb(255,	171, 39);
+  display: flex;
+  overflow-x: scroll;
+  width: 100%;
+}
+
+.ultimos-dias {
+  white-space: nowrap !important;
+  background-color:  rgb(137,	42,	91);
   display: flex;
   overflow-x: scroll;
   width: 100%;

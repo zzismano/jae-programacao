@@ -28,14 +28,40 @@ ul {
   padding-right: 12px;
   padding-left: 12px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   border: 2px solid white;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.square.transition {
+  height: 27%;
+  // align-items: first baseline;
+}
+
+
+.menu-square {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 70%;
+
+
+}
+
+.menu-square li {
+  font-size: 12px;
+  opacity: 70%;
+
 }
 
 .square li {
   font-weight: bold;
-  word-break: break-all;
+  // word-break: break-all;
   text-align: center;
   display: inline;
   font-size: 14px;

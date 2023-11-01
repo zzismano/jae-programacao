@@ -17,6 +17,11 @@
   .menu-teatro {
     width: 90%;
   }
+
+  .teatro {
+    border-left:  2px solid rgb(134, 43, 43);
+    border-right:  2px solid rgb(134, 43, 43);
+  }
 }
 .teatro {
   background-color:  rgb(251, 230, 230);
@@ -27,20 +32,43 @@
   border-bottom: 4px solid rgb(134, 43, 43);
 }
 
+#img-teatro {
+  width: 50%;
+  max-width: 15rem;
+  height: 9rem;
+}
+
 .infos-teatro {
-  margin-left: 20px;
+  margin-left: 10px;
+  height: 9rem;
+  display: flex;
+  align-items: end;
+
+
+
+
 }
 
 .infos-teatro p {
   font-weight: medium;
-  font-size: 10px;
+  font-size: 12px;
   margin-bottom: 0;
   color: rgb(134, 43, 43);
-  line-height: 1;
+  line-height: 1.2;
+  text-wrap: wrap;
 }
 
 .infos-teatro strong {
-  line-height: 1;
+  line-height: 1.2;
   color: rgb(134, 43, 43);
   font-size: 14px;
+  text-wrap: wrap;
+}
+@media screen and (max-width: 320px) {
+  .infos-teatro p {
+    font-size: 11px;
+  }
+  .infos-teatro strong {
+    font-size: 12px;
+  }
 }

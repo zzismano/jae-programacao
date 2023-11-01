@@ -15,9 +15,11 @@
 </head>
 <body>
   <nav class="navbar fixed-top " style="background-color: rgb(137,	42,	91)	">
-    <div class="container d-flex justify-content-center align-items-center">
-      <a class="navbar-brand " href="#">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center justify-content-between " href="#">
+        <i class="fa-solid fa-bars" style="color: #ffffff; float: left;"></i>
         <img src="./assets/images/ja e_fundo uva.png" alt="Jaé" width="50" height="40">
+        <i class="fa-solid fa-magnifying-glass" style="color: #ffffff; float: right;"></i>
       </a>
     </div>
   </nav>
@@ -27,27 +29,37 @@
       <ul class="categorias">
         <div class="square" id="filme" style="color: white; background-color: rgb(42, 42, 93);">
           <li>FILME</li>
+          <div class="menu-square d-none">
+          </div>
         </div>
         <div class="square" id="musica" style="color: white; background-color: rgb(23, 92, 27);">
           <li>MÚSICA</li>
+          <div class="menu-square d-none">
+            <li>festival</li>
+            <li>clubs</li>
+            <li>concerto</li>
+            <li>vem aí</li>
+          </div>
         </div>
         <div class="square" id="teatro" style="color: white; background-color: rgb(134, 43, 43);">
           <li>TEATRO</li>
+          <div class="menu-square d-none">
+          </div>
         </div>
         <div class="square" id="evento" style="color: white; background-color: rgb(194, 108, 108);">
           <li>EVENTO</li>
+          <div class="menu-square d-none">
+          </div>
         </div>
         <div class="square" id="expo" style="color: white; background-color:  rgb(206, 131, 56);">
           <li>EXPO</li>
-        </div>
-        <div class="square" id="livros" style="color: white; background-color: rgb(232, 165, 98);">
-          <li>LIVROS</li>
-        </div>
-        <div class="square" id="ideias" style="color: white; background-color: rgb(135, 114, 92);">
-          <li>IDEIAS</li>
+          <div class="menu-square d-none">
+          </div>
         </div>
         <div class="square" id="mais" style="color: white; background-color: rgb(181, 155, 127);">
           <li>MAIS</li>
+          <div class="menu-square d-none">
+          </div>
         </div>
         <div class="square" id="icones">
           <li>
@@ -62,25 +74,37 @@
       <div id="conteudo-home" class="">
         <div class="menu-home">
           <div id="slogan">
-            <h1>RIO DE JANEIRO</h1>
+            <h2>RIO DE JANEIRO</h2>
             <p>um mar de opções</p>
           </div>
         </div>
-        <div class="w-100 d-flex justify-content-center mt-3">
+        <div class="d-flex justify-content-center mt-3">
           <div class="carrosel">
             <div id="carouselExample" class="carousel slide">
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="https://conteudo.imguol.com.br/c/entretenimento/38/2017/02/16/14fev2016---maria-bethania-foi-homenageada-pela-mangueira-no-tradicional-show-de-verao-no-vivo-rio-no-rio-de-janeiro-1487245197120_v2_900x506.jpg" class="d-block" alt="...">
+                  <div class="legenda-carrosel">
+                    <p>legenda 1</p>
+                  </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2022/08/30/675x450/1_maria_bethania_gesticula_sentada_numa_cadeira__1_110636-26329398.jpg?20220830135121?20220830135121" class="d-block w-100" alt="...">
+                  <img src="https://midias.correiobraziliense.com.br/_midias/jpg/2022/08/30/675x450/1_maria_bethania_gesticula_sentada_numa_cadeira__1_110636-26329398.jpg?20220830135121?20220830135121" class="d-block" alt="...">
+                  <div class="legenda-carrosel">
+                    <p>legenda 2</p>
+                  </div>
                 </div>
                 <div class="carousel-item">
-                  <img src="https://imagens.brasil.elpais.com/resizer/vbY1QNSo25VhaJcpJ8Ks4Y9GpaA=/1200x0/filters:focal(436x161:446x171)/cloudfront-eu-central-1.images.arcpublishing.com/prisa/P7M65F64TJAZ7L5G2ZNHENSWGU.jpg" class="d-block w-100" alt="...">
+                  <img src="https://imagens.brasil.elpais.com/resizer/vbY1QNSo25VhaJcpJ8Ks4Y9GpaA=/1200x0/filters:focal(436x161:446x171)/cloudfront-eu-central-1.images.arcpublishing.com/prisa/P7M65F64TJAZ7L5G2ZNHENSWGU.jpg" class="d-block" alt="...">
+                  <div class="legenda-carrosel">
+                    <p>legenda 3</p>
+                  </div>
                 </div>
                 <div class="carousel-item">
                   <img src="https://images03.brasildefato.com.br/54c07006b0d26aee9e09c78a58c0b9ba.jpeg" class="d-block w-100" alt="...">
+                  <div class="legenda-carrosel">
+                    <p>legenda 4</p>
+                  </div>
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -121,7 +145,48 @@
         </div>
         <div class="mt-3">
           <p style="margin-bottom: 0; color: rgb(137,	42,	91); font-size: 12px; font-weight: bold;">mais vistos</p>
-          <div class="destaques py-2">
+          <div class="mais-vistos py-2">
+            <div class="card" style="width: 15rem;">
+              <img class="card-img-top" src="https://i.ytimg.com/vi/tTPETUehOMo/maxresdefault.jpg" alt="Card image cap">
+              <div class="card-body p-1 d-flex flex-column" style="height: 2.5rem; font-size: 11px;">
+                <div class="d-flex" style="height: 1rem;">
+                  <p style="font-weight: lighter;">filme | </p><p style="font-weight: bold;"> FESTIVAL DO RIO Vidas Passadas</p>
+                </div>
+                <p>sab, 14 |17h15| Estação NET Gávea</p>
+              </div>
+            </div>
+            <div class="card" style="width: 15rem;">
+              <img class="card-img-top" src="https://i.ytimg.com/vi/tTPETUehOMo/maxresdefault.jpg" alt="Card image cap">
+              <div class="card-body p-1 d-flex flex-column" style="height: 2.5rem; font-size: 11px;">
+                <div class="d-flex" style="height: 1rem;">
+                  <p style="font-weight: lighter;">filme | </p><p style="font-weight: bold;"> FESTIVAL DO RIO Vidas Passadas</p>
+                </div>
+                <p>sab, 14 |17h15| Estação NET Gávea</p>
+              </div>
+            </div>
+            <div class="card" style="width: 15rem;">
+              <img class="card-img-top" src="https://i.ytimg.com/vi/tTPETUehOMo/maxresdefault.jpg" alt="Card image cap">
+              <div class="card-body p-1 d-flex flex-column" style="height: 2.5rem; font-size: 11px;">
+                <div class="d-flex" style="height: 1rem;">
+                  <p style="font-weight: lighter;">filme | </p><p style="font-weight: bold;"> FESTIVAL DO RIO Vidas Passadas</p>
+                </div>
+                <p>sab, 14 |17h15| Estação NET Gávea</p>
+              </div>
+            </div>
+            <div class="card" style="width: 15rem;">
+              <img class="card-img-top" src="https://i.ytimg.com/vi/tTPETUehOMo/maxresdefault.jpg" alt="Card image cap">
+              <div class="card-body p-1 d-flex flex-column" style="height: 2.5rem; font-size: 11px;">
+                <div class="d-flex" style="height: 1rem;">
+                  <p style="font-weight: lighter;">filme | </p><p style="font-weight: bold;"> FESTIVAL DO RIO Vidas Passadas</p>
+                </div>
+                <p>sab, 14 |17h15| Estação NET Gávea</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mt-3">
+          <p style="margin-bottom: 0; color: rgb(137,	42,	91); font-size: 12px; font-weight: bold;">ultimos dias</p>
+          <div class="ultimos-dias py-2">
             <div class="card" style="width: 15rem;">
               <img class="card-img-top" src="https://i.ytimg.com/vi/tTPETUehOMo/maxresdefault.jpg" alt="Card image cap">
               <div class="card-body p-1 d-flex flex-column" style="height: 2.5rem; font-size: 11px;">
@@ -164,7 +229,7 @@
       <div id="conteudo-musica" class="d-none" style="width: 100%">
         <div class="menu-musica">
           <div id="menu-botoes">
-            <p style="font-size: 10px; margin: 0">clique nos botões para outros shows</p>
+            <p style="font-size: 10px; margin: 0"></p>
           </div>
         </div>
         <div class="row" style="margin-top: 5rem; margin-right: 0; margin-left: 0;">
@@ -294,7 +359,7 @@
       <div id="conteudo-filme" class="d-none">
         <div class="menu-filme">
           <div id="menu-botoes">
-            <p style="font-size: 10px; margin: 0">clique nos botões para</p>
+            <p style="font-size: 10px; margin: 0"></p>
           </div>
         </div>
         <div class="row" style="margin-top: 5rem; margin-right: 0; margin-left: 0;">
@@ -306,6 +371,7 @@
                 <strong>PÉROLA</strong>
                 <p>Ficção / drama | Dir. Murilo Benício | BRA | 14 | 90’  </p>
                 <p id="horario">sex | 06/out | 22h </p>
+                <button class="button-small">comprar ingresso</button>
               </div>
             </div>
             <div class="sinopse">
@@ -315,7 +381,6 @@
               <div class="legenda">
                 <strong>Cinemark Downtown | Cinépolis Rio Design Barra | Kinoplex Fashion Mall | UCI New York City Center  </strong>
               </div>
-
             </div>
           </div>
           <div class="filme col-12 col-m-12 col-lg-4 ">
@@ -325,6 +390,7 @@
                 <strong>PÉROLA</strong>
                 <p>Ficção / drama | Dir. Murilo Benício | BRA | 14 | 90’  </p>
                 <p id="horario">sex | 06/out | 22h </p>
+                <button class="button-small">comprar ingresso</button>
               </div>
             </div>
             <div class="sinopse">
@@ -334,7 +400,6 @@
               <div class="legenda">
                 <strong>Cinemark Downtown | Cinépolis Rio Design Barra | Kinoplex Fashion Mall | UCI New York City Center  </strong>
               </div>
-
             </div>
           </div>
           <div class="filme col-12 col-m-12 col-lg-4 ">
@@ -344,6 +409,7 @@
                 <strong>PÉROLA</strong>
                 <p>Ficção / drama | Dir. Murilo Benício | BRA | 14 | 90’  </p>
                 <p id="horario">sex | 06/out | 22h </p>
+                <button class="button-small">comprar ingresso</button>
               </div>
             </div>
             <div class="sinopse">
@@ -353,7 +419,6 @@
               <div class="legenda">
                 <strong>Cinemark Downtown | Cinépolis Rio Design Barra | Kinoplex Fashion Mall | UCI New York City Center  </strong>
               </div>
-
             </div>
           </div>
           <div class="filme col-12 col-m-12 col-lg-4 ">
@@ -363,6 +428,7 @@
                 <strong>PÉROLA</strong>
                 <p>Ficção / drama | Dir. Murilo Benício | BRA | 14 | 90’  </p>
                 <p id="horario">sex | 06/out | 22h </p>
+                <button class="button-small">comprar ingresso</button>
               </div>
             </div>
             <div class="sinopse">
@@ -372,7 +438,6 @@
               <div class="legenda">
                 <strong>Cinemark Downtown | Cinépolis Rio Design Barra | Kinoplex Fashion Mall | UCI New York City Center  </strong>
               </div>
-
             </div>
           </div>
           <div class="filme col-12 col-m-12 col-lg-4 ">
@@ -382,6 +447,7 @@
                 <strong>PÉROLA</strong>
                 <p>Ficção / drama | Dir. Murilo Benício | BRA | 14 | 90’  </p>
                 <p id="horario">sex | 06/out | 22h </p>
+                <button class="button-small">comprar ingresso</button>
               </div>
             </div>
             <div class="sinopse">
@@ -391,7 +457,6 @@
               <div class="legenda">
                 <strong>Cinemark Downtown | Cinépolis Rio Design Barra | Kinoplex Fashion Mall | UCI New York City Center  </strong>
               </div>
-
             </div>
           </div>
           <div class="filme col-12 col-m-12 col-lg-4 ">
@@ -401,6 +466,7 @@
                 <strong>PÉROLA</strong>
                 <p>Ficção / drama | Dir. Murilo Benício | BRA | 14 | 90’  </p>
                 <p id="horario">sex | 06/out | 22h </p>
+                <button class="button-small">comprar ingresso</button>
               </div>
             </div>
             <div class="sinopse">
@@ -410,26 +476,145 @@
               <div class="legenda">
                 <strong>Cinemark Downtown | Cinépolis Rio Design Barra | Kinoplex Fashion Mall | UCI New York City Center  </strong>
               </div>
-
             </div>
           </div>
+
         </div>
       </div>
 
       <div id="conteudo-teatro" class="d-none">
         <div class="menu-teatro">
           <div id="menu-botoes">
-            <p style="font-size: 10px; margin: 0">clique nos botões para</p>
+            <p style="font-size: 10px; margin: 0"></p>
           </div>
         </div>
         <div class="row" style="margin-top: 5rem; margin-right: 0; margin-left: 0;">
           <div class="teatro col-12 col-m-12 col-lg-4">
             <div class="letreiro">
               <div class="foto-teatro"></div>
+              <img src="https://eurio.com.br/hf-conteudo/uploads/colunas/2023/09/1190_img-20230921-wa0182-jpg.jpg" alt="" id="img-teatro">
               <div class="infos-teatro">
-                <strong>A TEMPESTADE </strong>
-                <p>Drama | Autor Fulano de Tal /Dir. Aluizio Abranches| 12 | 90' </p>
-                <p id="horario">qui - sáb, 20h | dom, 19h | de 03/out até 17 </p>
+                <div>
+                  <strong>A TEMPESTADE </strong>
+                  <p>Drama | Autor Fulano de Tal /Dir. Aluizio Abranches| 12 | 90' </p>
+                  <p id="horario">qui - sáb, 20h | dom, 19h | de 03/out até 17 </p>
+                  <button class="button-small">comprar ingresso</button>
+                </div>
+              </div>
+            </div>
+            <div class="sinopse">
+              <p>
+                O longa baseado na peça teatral de Mauro Rasi é um retrato da família brasileira e da relação conflituosa, mas amorosa, entre mãe e filho. Pérola, a mãe cuidadosa, planejou o futuro da família: Mauro seria advogado e a irmã teria um bom casamento. Mas as coisas não são assim, o filho se apaixona pelo teatro e muda de cidade. Ao voltar a Bauru pela morte da mãe, ele revive o passado e entre as memórias estão lembranças divertidas, inusitadas e amorosas. É o segundo filme dirigido por Murilo Benício
+              </p>
+              <div class="legenda">
+                <strong>R. São João Batista, 104 </strong>
+              </div>
+
+            </div>
+          </div>
+          <div class="teatro col-12 col-m-12 col-lg-4">
+            <div class="letreiro">
+              <div class="foto-teatro"></div>
+              <img src="https://eurio.com.br/hf-conteudo/uploads/colunas/2023/09/1190_img-20230921-wa0182-jpg.jpg" alt="" id="img-teatro">
+              <div class="infos-teatro">
+                <div>
+                  <strong>A TEMPESTADE </strong>
+                  <p>Drama | Autor Fulano de Tal /Dir. Aluizio Abranches| 12 | 90' </p>
+                  <p id="horario">qui - sáb, 20h | dom, 19h | de 03/out até 17 </p>
+                  <button class="button-small">comprar ingresso</button>
+                </div>
+              </div>
+            </div>
+            <div class="sinopse">
+              <p>
+                O longa baseado na peça teatral de Mauro Rasi é um retrato da família brasileira e da relação conflituosa, mas amorosa, entre mãe e filho. Pérola, a mãe cuidadosa, planejou o futuro da família: Mauro seria advogado e a irmã teria um bom casamento. Mas as coisas não são assim, o filho se apaixona pelo teatro e muda de cidade. Ao voltar a Bauru pela morte da mãe, ele revive o passado e entre as memórias estão lembranças divertidas, inusitadas e amorosas. É o segundo filme dirigido por Murilo Benício
+              </p>
+              <div class="legenda">
+                <strong>R. São João Batista, 104 </strong>
+              </div>
+
+            </div>
+          </div>
+          <div class="teatro col-12 col-m-12 col-lg-4">
+            <div class="letreiro">
+              <div class="foto-teatro"></div>
+              <img src="https://eurio.com.br/hf-conteudo/uploads/colunas/2023/09/1190_img-20230921-wa0182-jpg.jpg" alt="" id="img-teatro">
+              <div class="infos-teatro">
+                <div>
+                  <strong>A TEMPESTADE </strong>
+                  <p>Drama | Autor Fulano de Tal /Dir. Aluizio Abranches| 12 | 90' </p>
+                  <p id="horario">qui - sáb, 20h | dom, 19h | de 03/out até 17 </p>
+                  <button class="button-small">comprar ingresso</button>
+                </div>
+              </div>
+            </div>
+            <div class="sinopse">
+              <p>
+                O longa baseado na peça teatral de Mauro Rasi é um retrato da família brasileira e da relação conflituosa, mas amorosa, entre mãe e filho. Pérola, a mãe cuidadosa, planejou o futuro da família: Mauro seria advogado e a irmã teria um bom casamento. Mas as coisas não são assim, o filho se apaixona pelo teatro e muda de cidade. Ao voltar a Bauru pela morte da mãe, ele revive o passado e entre as memórias estão lembranças divertidas, inusitadas e amorosas. É o segundo filme dirigido por Murilo Benício
+              </p>
+              <div class="legenda">
+                <strong>R. São João Batista, 104 </strong>
+              </div>
+
+            </div>
+          </div>
+          <div class="teatro col-12 col-m-12 col-lg-4">
+            <div class="letreiro">
+              <div class="foto-teatro"></div>
+              <img src="https://eurio.com.br/hf-conteudo/uploads/colunas/2023/09/1190_img-20230921-wa0182-jpg.jpg" alt="" id="img-teatro">
+              <div class="infos-teatro">
+                <div>
+                  <strong>A TEMPESTADE </strong>
+                  <p>Drama | Autor Fulano de Tal /Dir. Aluizio Abranches| 12 | 90' </p>
+                  <p id="horario">qui - sáb, 20h | dom, 19h | de 03/out até 17 </p>
+                  <button class="button-small">comprar ingresso</button>
+                </div>
+              </div>
+            </div>
+            <div class="sinopse">
+              <p>
+                O longa baseado na peça teatral de Mauro Rasi é um retrato da família brasileira e da relação conflituosa, mas amorosa, entre mãe e filho. Pérola, a mãe cuidadosa, planejou o futuro da família: Mauro seria advogado e a irmã teria um bom casamento. Mas as coisas não são assim, o filho se apaixona pelo teatro e muda de cidade. Ao voltar a Bauru pela morte da mãe, ele revive o passado e entre as memórias estão lembranças divertidas, inusitadas e amorosas. É o segundo filme dirigido por Murilo Benício
+              </p>
+              <div class="legenda">
+                <strong>R. São João Batista, 104 </strong>
+              </div>
+
+            </div>
+          </div>
+          <div class="teatro col-12 col-m-12 col-lg-4">
+            <div class="letreiro">
+              <div class="foto-teatro"></div>
+              <img src="https://eurio.com.br/hf-conteudo/uploads/colunas/2023/09/1190_img-20230921-wa0182-jpg.jpg" alt="" id="img-teatro">
+              <div class="infos-teatro">
+                <div>
+                  <strong>A TEMPESTADE </strong>
+                  <p>Drama | Autor Fulano de Tal /Dir. Aluizio Abranches| 12 | 90' </p>
+                  <p id="horario">qui - sáb, 20h | dom, 19h | de 03/out até 17 </p>
+                  <button class="button-small">comprar ingresso</button>
+                </div>
+              </div>
+            </div>
+            <div class="sinopse">
+              <p>
+                O longa baseado na peça teatral de Mauro Rasi é um retrato da família brasileira e da relação conflituosa, mas amorosa, entre mãe e filho. Pérola, a mãe cuidadosa, planejou o futuro da família: Mauro seria advogado e a irmã teria um bom casamento. Mas as coisas não são assim, o filho se apaixona pelo teatro e muda de cidade. Ao voltar a Bauru pela morte da mãe, ele revive o passado e entre as memórias estão lembranças divertidas, inusitadas e amorosas. É o segundo filme dirigido por Murilo Benício
+              </p>
+              <div class="legenda">
+                <strong>R. São João Batista, 104 </strong>
+              </div>
+
+            </div>
+          </div>
+          <div class="teatro col-12 col-m-12 col-lg-4">
+            <div class="letreiro">
+              <div class="foto-teatro"></div>
+              <img src="https://eurio.com.br/hf-conteudo/uploads/colunas/2023/09/1190_img-20230921-wa0182-jpg.jpg" alt="" id="img-teatro">
+              <div class="infos-teatro">
+                <div>
+                  <strong>A TEMPESTADE </strong>
+                  <p>Drama | Autor Fulano de Tal /Dir. Aluizio Abranches| 12 | 90' </p>
+                  <p id="horario">qui - sáb, 20h | dom, 19h | de 03/out até 17 </p>
+                  <button class="button-small">comprar ingresso</button>
+                </div>
               </div>
             </div>
             <div class="sinopse">
