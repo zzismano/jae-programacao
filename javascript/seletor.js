@@ -8,6 +8,8 @@ const logo = document.querySelector('.navbar-brand')
 const conteudoHome = document.getElementById('conteudo-home')
 const categorias = [filme, musica, teatro, mais, evento, expo]
 
+console.log(categorias);
+
 logo.addEventListener("click", (event)=> {
 
   conteudoHome.classList.remove("d-none")
@@ -16,7 +18,10 @@ logo.addEventListener("click", (event)=> {
     var color = categoria.style.color
     var conteudo = document.getElementById(`conteudo-${categoria.id}`)
 
+    console.log(categoria.classList);
+
     categoria.classList.remove("transition")
+
     if (!categoria.lastElementChild.classList.contains("d-none")) {
       categoria.lastElementChild.classList.add("d-none")
     }
@@ -43,10 +48,10 @@ categorias.forEach((categoria) => {
     var conteudo = document.getElementById(`conteudo-${categoria.id}`)
 
     conteudo.classList.remove('d-none')
-    event.currentTarget.classList.toggle("transition")
+    event.currentTarget.classList.add("transition")
 
 
-    event.currentTarget.lastElementChild.classList.toggle("d-none")
+    event.currentTarget.lastElementChild.classList.remove("d-none")
 
     if (!conteudoHome.classList.contains('d-none')) {
       conteudoHome.classList.add('d-none')

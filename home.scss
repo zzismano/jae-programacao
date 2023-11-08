@@ -49,6 +49,15 @@
 .carousel-item img {
   height: 30vh;
   width: 50vh;
+  object-fit: cover;
+}
+
+
+@media screen and (max-width: 750px) {
+  .carousel-item img {
+    width: 40vh;
+  }
+
 }
 
 .carrosel {
