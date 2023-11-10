@@ -8,11 +8,11 @@ const logo = document.querySelector('.navbar-brand')
 const conteudoHome = document.getElementById('conteudo-home')
 const categorias = [filme, musica, teatro, mais, evento, expo]
 
-console.log(categorias);
 
 logo.addEventListener("click", (event)=> {
 
   conteudoHome.classList.remove("d-none")
+
   categorias.forEach((categoria) => {
     var bgColor = categoria.style.backgroundColor
     var color = categoria.style.color

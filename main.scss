@@ -40,7 +40,22 @@
 
 }
 
+.custom-select {
+  font-size: 12px;
+  color: rgb(137,	42,	91);
+}
+.custom-select select {
+  border-color: rgb(137,	42,	91);
+  background-color: transparent;
+  width: 100%;
+  color: rgb(137,	42,	91);
+}
 
+
+
+.custom-select-div {
+  width: 40%;
+}
 
 #horario {
   font-weight: bold;
@@ -69,8 +84,12 @@
   }
 }
 #menu-botoes{
-  color: rgb(204, 203, 203);
+  color: white;
   margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
 }
 
 .sinopse {
