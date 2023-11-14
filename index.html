@@ -30,55 +30,52 @@
         <div class="square" id="filme" style="color: white; background-color: rgb(42, 42, 93);">
           <li>FILME</li>
           <div class="menu-square d-none">
-            <li>festival</li>
-            <li>clubs</li>
-            <li>concerto</li>
+            <li>em cartaz</li>
+            <li>mostra/<br>
+              festival</li>
             <li>vem aí</li>
           </div>
         </div>
         <div class="square" id="musica" style="color: white; background-color: rgb(23, 92, 27);">
           <li>MÚSICA</li>
           <div class="menu-square d-none">
+            <li>show</li>
             <li>festival</li>
             <li>clubs</li>
-            <li>concerto</li>
+            <li>clássica</li>
             <li>vem aí</li>
           </div>
         </div>
         <div class="square" id="teatro" style="color: white; background-color: rgb(134, 43, 43);">
           <li>TEATRO</li>
           <div class="menu-square d-none">
-            <li>festival</li>
-            <li>clubs</li>
-            <li>concerto</li>
+            <li>peça</li>
+            <li>musica</li>
+            <li>stand-up</li>
             <li>vem aí</li>
           </div>
         </div>
         <div class="square" id="evento" style="color: white; background-color: rgb(194, 108, 108);">
           <li>EVENTO</li>
           <div class="menu-square d-none">
-            <li>festival</li>
-            <li>clubs</li>
-            <li>concerto</li>
+            <li>evento</li>
             <li>vem aí</li>
           </div>
         </div>
         <div class="square" id="expo" style="color: white; background-color:  rgb(206, 131, 56);">
           <li>EXPO</li>
           <div class="menu-square d-none">
-            <li>festival</li>
-            <li>clubs</li>
-            <li>concerto</li>
-            <li>vem aí</li>
+            <li>mostra</li>
+            <li>permanente</li>
           </div>
         </div>
         <div class="square" id="mais" style="color: white; background-color: rgb(181, 155, 127);">
           <li>MAIS</li>
           <div class="menu-square d-none">
-            <li>festival</li>
-            <li>clubs</li>
-            <li>concerto</li>
-            <li>vem aí</li>
+            <li>dança/balé</li>
+            <li>literatura</li>
+            <li>ar livre</li>
+            <li>dicas do JAÉ</li>
           </div>
         </div>
         <div class="square" id="icones">
@@ -96,13 +93,13 @@
           <div id="slogan">
             <h2>RIO DE JANEIRO</h2>
             <p style="margin-bottom: 0;">um mar de opções</p>
-            <div class="d-flex w-100 justify-content-between px-3 custom-select">
+            <div class="d-flex w-100 justify-content-between px-1 custom-select">
               <div class="d-flex flex-column custom-select-div">
                 <span>onde</span>
                 <select name="onde" id="onde">
                   <option value="zona norte" class="select-items">zona norte</option>
                   <option value="zona oeste" class="select-items">zona oeste</option>
-                  <option value="zona sul" class="select-items">zona sul</option>
+                  <option value="zona sul/centro" class="select-items">zona sul/centro</option>
                 </select>
               </div>
               <div class="d-flex flex-column align-items-end custom-select-div">
@@ -268,9 +265,27 @@
         <div class="menu-musica">
           <div id="menu-botoes">
             <h1>MÚSICA</h1>
+            <div class="d-flex w-100 justify-content-between px-1 custom-select">
+              <div class="d-flex flex-column custom-select-div">
+                <span>onde</span>
+                <select name="onde" id="onde">
+                  <option value="zona norte" class="select-items">zona norte</option>
+                  <option value="zona oeste" class="select-items">zona oeste</option>
+                  <option value="zona sul/centro" class="select-items">zona sul/centro</option>
+                </select>
+              </div>
+              <div class="d-flex flex-column align-items-end custom-select-div">
+                <span>quando</span>
+                <select name="quando" id="quando">
+                  <option value="hoje" class="select-items">hoje</option>
+                  <option value="essa semana" class="select-items">essa semana</option>
+                  <option value="fim de semana class="select-items"">fim de semana</option>
+                </select>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row" style="margin-top: 5rem; margin-right: 0; margin-left: 0;">
+        <div class="row" style="margin-top: 7rem; margin-right: 0; margin-left: 0;">
           <div class="musica col-12 col-m-12 col-lg-4 p-3">
             <div class="letreiro">
               <div class="foto-musica"></div>
@@ -398,9 +413,27 @@
         <div class="menu-filme">
           <div id="menu-botoes">
             <h1>FILME</h1>
+            <div class="d-flex w-100 justify-content-between px-1 custom-select">
+              <div class="d-flex flex-column custom-select-div">
+                <span>onde</span>
+                <select name="onde" id="onde">
+                  <option value="zona norte" class="select-items">zona norte</option>
+                  <option value="zona oeste" class="select-items">zona oeste</option>
+                  <option value="zona sul/centro" class="select-items">zona sul/centro</option>
+                </select>
+              </div>
+              <div class="d-flex flex-column align-items-end custom-select-div">
+                <span>quando</span>
+                <select name="quando" id="quando">
+                  <option value="hoje" class="select-items">hoje</option>
+                  <option value="essa semana" class="select-items">essa semana</option>
+                  <option value="fim de semana class="select-items"">fim de semana</option>
+                </select>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row" style="margin-top: 5rem; margin-right: 0; margin-left: 0;">
+        <div class="row" style="margin-top: 7rem; margin-right: 0; margin-left: 0;">
 
           <div class="filme col-12 col-m-12 col-lg-4 ">
             <div class="letreiro">
@@ -524,9 +557,27 @@
         <div class="menu-teatro">
           <div id="menu-botoes">
             <h1>TEATRO</h1>
+            <div class="d-flex w-100 justify-content-between px-1 custom-select">
+              <div class="d-flex flex-column custom-select-div">
+                <span>onde</span>
+                <select name="onde" id="onde">
+                  <option value="zona norte" class="select-items">zona norte</option>
+                  <option value="zona oeste" class="select-items">zona oeste</option>
+                  <option value="zona sul/centro" class="select-items">zona sul/centro</option>
+                </select>
+              </div>
+              <div class="d-flex flex-column align-items-end custom-select-div">
+                <span>quando</span>
+                <select name="quando" id="quando">
+                  <option value="hoje" class="select-items">hoje</option>
+                  <option value="essa semana" class="select-items">essa semana</option>
+                  <option value="fim de semana class="select-items"">fim de semana</option>
+                </select>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row" style="margin-top: 5rem; margin-right: 0; margin-left: 0;">
+        <div class="row" style="margin-top: 7rem; margin-right: 0; margin-left: 0;">
           <div class="teatro col-12 col-m-12 col-lg-4">
             <div class="letreiro">
               <div class="foto-teatro"></div>
